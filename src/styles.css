@@ -2,7 +2,71 @@
 @tailwind components;
 @tailwind utilities;
 
-h1 {
-  color: darkblue;
-  font-family: cursive;
+.btn {
+  @apply rounded;
+}
+
+.btn:hover {
+  @apply bg-blue-300;
+}
+/* 
+.icon {
+  margin-top: 6px;
+  content: '';
+  border: 6px solid transparent;
+  border-top: 6px solid #742e1e;
+  transition: 0.2s;
+  transform-origin: 50% 25%;
+}
+
+.icon.open {
+  transform: rotate(180deg);
+} */
+
+.icon {
+  @apply mt-2;
+  @apply border-8;
+  @apply border-transparent;
+  transform-origin: 50% 25%;
+  border-top: 8px solid #742e1e;
+  transition: 0.2s;
+}
+
+.icon.open {
+  transform: rotate(180deg);
+}
+
+.bgcolor {
+  background: #edf4ec;
+}
+
+.multiselect {
+  margin: 5px 0;
+  width: 100%;
+  height: 250px;
+  padding: 12px 0;
+  border-radius: 5px;
+  cursor: pointer;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  transition: 0.4s;
+}
+
+.multiselect.hide {
+  transition: 0.4s;
+  padding: 0;
+  height: 0;
+}
+
+.dropdown-container {
+  width: 600px;
+}
+
+.multi-hover:hover {
+  background: #c1b6b4;
+}
+
+::-webkit-scrollbar {
+  width: 0;
 }

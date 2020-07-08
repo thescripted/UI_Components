@@ -5,7 +5,7 @@
   "main": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "parcel public/index.html -p 3000",
+    "dev": "parcel public/index.html -p 4000",
     "build": "parcel build public/index.html",
     "start": "parcel serve public/index.html"
   },
@@ -13,14 +13,13 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "babel-eslint": "^10.1.0",
-    "eslint": "^7.4.0",
-    "eslint-plugin-react": "^7.20.3",
     "parcel": "^2.0.0-beta.1"
   },
   "dependencies": {
+    "autoprefixer": "^9.8.4",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-router-dom": "^5.2.0",
     "tailwindcss": "^1.4.6"
   }
 }
